@@ -82,11 +82,8 @@ const Skills = () => {
               'Data Analysis',
               'IoT Development', 
               'AI Integration',
-              'API Development',
-              'System Design',
               'Problem Solving',
-              'Team Collaboration',
-              'Project Management'
+              'Team Collaboration'
             ].map((skill, index) => (
               <div
                 key={index}

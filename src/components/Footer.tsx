@@ -18,13 +18,13 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/souksha-hd',
+      href: 'https://www.linkedin.com/in/souksha-h-d-3bb73b284/',
       icon: Linkedin,
       color: 'hover:text-blue-400'
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/souksha-hd',
+      href: 'https://github.com/SoukshaHD',
       icon: Github,
       color: 'hover:text-purple-400'
     },
@@ -128,20 +128,18 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Bottom Section
         <div className="py-6 border-t border-card-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-1 text-text-muted text-sm">
-              <span>© {currentYear} Souksha HD. Made with</span>
-              <Heart size={16} className="text-red-500 animate-pulse" />
-              <span>and lots of coffee ☕</span>
+              <span>© {currentYear} Souksha HD.</span>
             </div>
             
             <div className="text-text-muted text-sm">
               <span>Built with React, TypeScript & Tailwind CSS</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

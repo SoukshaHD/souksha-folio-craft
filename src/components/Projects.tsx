@@ -106,21 +106,21 @@ const Projects = () => {
 
                 {/* Project Links */}
                 <div className="flex gap-3 pt-4 border-t border-card-border">
-                  <button className="btn-outline flex items-center gap-2 text-sm py-2 px-4">
+                  {/* <button className="btn-outline flex items-center gap-2 text-sm py-2 px-4">
                     <ExternalLink size={16} />
                     View Project
                   </button>
                   <button className="flex items-center gap-2 text-sm py-2 px-4 text-text-muted hover:text-primary transition-colors">
                     <Github size={16} />
                     Source Code
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-text-primary mb-4">
@@ -136,7 +136,7 @@ const Projects = () => {
               Let's Work Together
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

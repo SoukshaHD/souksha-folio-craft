@@ -73,20 +73,24 @@ const Hero = () => {
               Explore My Work
               <ArrowDown size={20} />
             </button>
-            <button className="btn-outline flex items-center gap-2">
+            <a
+              href="/assets/souksha_resume.pdf"
+              download="souksha_resume.pdf"
+              className="btn-outline flex items-center gap-2"
+            >
               <Download size={20} />
               Download Resume
-            </button>
+            </a>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient mb-2">2+</div>
-              <div className="text-text-muted">Years Experience</div>
+              <div className="text-3xl font-bold text-gradient mb-2">3+</div>
+              <div className="text-text-muted">Hackathons</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient mb-2">15+</div>
+              <div className="text-3xl font-bold text-gradient mb-2">5+</div>
               <div className="text-text-muted">Projects Completed</div>
             </div>
             <div className="text-center">
@@ -97,14 +101,14 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={scrollToAbout}
             className="p-2 rounded-full border border-primary/30 hover:border-primary/60 transition-colors"
           >
             <ArrowDown size={24} className="text-primary" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

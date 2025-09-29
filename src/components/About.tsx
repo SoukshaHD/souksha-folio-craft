@@ -1,6 +1,15 @@
+
 import { User, Code, Database, Brain } from 'lucide-react';
+import profileImage from '../assets/profile_image.jpeg';
 
 const About = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="about" className="section-padding bg-surface">
       <div className="container-max">
@@ -18,14 +27,14 @@ const About = () => {
           <div className="order-2 lg:order-1">
             <div className="relative max-w-md mx-auto">
               {/* Photo Placeholder */}
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border flex items-center justify-center mb-6">
-                <div className="text-center">
-                  <User size={80} className="text-primary/60 mx-auto mb-4" />
-                  <p className="text-text-muted text-sm">Professional Photo</p>
-                  <p className="text-text-muted text-xs">Coming Soon</p>
+              <div className="aspect-square rounded-2xl border border-card-border overflow-hidden mb-6">
+                  <img
+                    src={profileImage}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-              
+                              
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/10 rounded-full blur-xl"></div>
@@ -71,19 +80,19 @@ const About = () => {
                 
                 <div className="bg-surface-bright rounded-xl p-4 border border-card-border">
                   <User className="text-primary mb-2" size={24} />
-                  <h3 className="font-semibold text-text-primary">Experience</h3>
-                  <p className="text-sm text-text-muted">2+ Years</p>
+                  <h3 className="font-semibold text-text-primary">Certifications</h3>
+                  <p className="text-sm text-text-muted">5+ Certificates</p>
                 </div>
               </div>
 
               {/* CTA */}
               <div className="pt-6">
-                <a
-                  href="mailto:sougowda14@gmail.com"
+                <button
+                  onClick={() => scrollToSection('contact')}
                   className="btn-primary inline-flex items-center gap-2"
                 >
                   Get In Touch
-                </a>
+                </button>
               </div>
             </div>
           </div>
